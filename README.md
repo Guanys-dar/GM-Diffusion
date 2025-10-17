@@ -3,11 +3,11 @@
 End-to-end pipeline for learning guidance-map driven HDR generation from natural images.
 The project is structured around the three phases used in our ICCV 2025 submission:
 
-1. **Stage 1 — Dataset & VQGAN pretraining**: augment MSCOCO imagery with tone-mapping
+1. **Stage 1 — Dataset Construction with VAE finetuning**: augment MSCOCO imagery with tone-mapping
    operations to build text/SDR/GM triplets and adapt the base VQGAN with LoRA.
-2. **Stage 2 — GM-aware UNet fine-tuning**: extend Stable Diffusion with a GM branch that
+2. **Stage 2 — GM denoiser fine-tuning**: extend Stable Diffusion with a GM branch that
    produces HDR guidance for every SDR sample.
-3. **Inference — Paired SDR/HDR generation**: run the dual-branch pipeline to synthesise SDR
+3. **Inference — Paired SDR-GM generation**: run the dual-branch pipeline to synthesise SDR
    renders and their associated guidance maps in parallel.
 
 The repository is now packaged so that reusable components live under `gm_diffusion/` while
@@ -150,16 +150,7 @@ ship with placeholder paths. They are not required for the main training/inferen
 
 ## Citation
 
-If you use this codebase in your research, please consider citing our upcoming paper:
-
-```
-@inproceedings{gm-diffusion-iccv25,
-  title     = {GM Diffusion: Dual-Branch Guidance Maps for HDR Generation},
-  author    = {Shen, Guanyuan and collaborators},
-  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year      = {2025}
-}
-```
+Coming soon.
 
 ## License
 
