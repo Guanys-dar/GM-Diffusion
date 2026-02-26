@@ -115,6 +115,10 @@ accelerate launch scripts/stage2/train_gm_unet.py \
 Tip: Provide either `--validation_prompts` on the CLI or a `--validation_prompt_file`, and pair
 them with SDR reference images via `--validation_image_dir` to reproduce the validation figures.
 
+**You can find our checkpoints here:** [OneDrive Link](https://1drv.ms/f/c/071c4aa99a168eb9/IgBQwGnDv2nOQbPY-zMVQsMpAVFEdZOzib5JeJ0fbPJ6ZZ0?e=k8asts)
+
+
+
 ## Stage 3 – Text-to-HDR and SDR-to-HDRTV Inference
 
 The inference driver reconstructs HDR outputs by combining predicted SDR renders and gain maps
