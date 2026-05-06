@@ -1,7 +1,6 @@
 # HDR Image Generation via Gain Map Decomposed Diffusion
 
 Offical Repo for ICCV 2025 — “HDR Image Generation via Gain Map Decomposed Diffusion”   
-Confidential review copy. Do not distribute.
 
 Our method tackles two long-standing obstacles for HDR image generation:
 pretrained SDR auto-encoders clip 16-bit HDR signals, and large-scale HDR datasets are scarce.
